@@ -1,0 +1,56 @@
+
+@headerfont: 'Raleway', sans-serif;
+
+
+.header {
+	
+	margin-top: 120px;
+	margin-bottom: 20px;
+	font-family: @headerfont;
+
+	h1 {
+		font-family: @headerfont;
+		font-weight: 100;
+		font-size: 40px;
+	}
+
+	ul {
+		
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			
+			float: left;
+			padding-right: 20px;
+			font-weight: 300;
+			font-size: 20px;
+
+		}
+	}
+}
+
+.header-image {
+	background-image: url(../img/bg/01.jpg);;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 200px;
+	filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    margin-bottom: 20px;
+}
+
+.post-list {
+	font-size: 15px;
+
+	ul {
+		list-style: none;
+		padding-left: 0px;
+
+		li {
+			margin-bottom: 10px;
+		}
+	}
+}
