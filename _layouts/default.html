@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
@@ -27,40 +28,48 @@
   </head>
   <body>
     
-    <div class="container header">
+  <div class="container header">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+          <div class="col-md-12">
+            <h1><strong>LU</strong>FEHR</h1>
+          </div>
+          <div class="col-md-12">
+            <ul>
+              <li><a href="/">ARTICLES</a></li>
+              <li><a href="/about.html">ABOUT</a></li>
+            </ul>
+                        <div class="pull-right">
+              <a href="http://twitter.com/lufehr" target="_blank">Twitter</a> / <a href="mailto:lu@fireup.ch">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="header-image header-{{page.header}}"></div>
+
+
+    <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <h1>LU<strong>FEHR</strong></h1>
-        </div>
-        <div class="col-lg-8">
-          <ul>
-            <li><a href="">Articles</a></li>
-            <li><a href="">About</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <div class="pull-right">
-          <a href="http://twitter.com/lufehr" target="_blank">Twitter</a> / <a href="mailto:lu@fireup.ch">Email</a>
+        <div class="col-md-10 col-md-offset-1">
+          <div class="row">
+            <div class="col-md-12">
+              {{ content }}
+            </div>
+            <div class="col-md-12 copy">
+              <hr>
+              <p>
+                  Copyright &copy; 2013 lufehr.ch, Luca Fehr. <strong>Disclaimer:</strong> The content is based on my own personal opinions and do not represent any other views. If it contains typos or bugs, sorry for it but thanks for a feedback.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="header-image"></div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          {{ content }}
-        </div>
-        <div class="col-lg-12 copy">
-        <hr>
-          <p>
-            Copyright &copy; 2013 lufehr.ch, Luca Fehr. <strong>Disclaimer:</strong> The content is based on my own personal opinions and do not represent any other views. If it contains typos or bugs, sorry for it but thanks for a feedback.
-            </p>
-        </div>
-      </div>
-    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
@@ -68,5 +77,19 @@
     <script src="/js/bootstrap.min.js"></script>
 
     <script>hljs.initHighlightingOnLoad();</script>
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'lufehrch'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    
+    
   </body>
 </html>

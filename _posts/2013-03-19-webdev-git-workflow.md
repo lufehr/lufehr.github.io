@@ -10,7 +10,7 @@ Seit einiger Zeit bin ich auf der Suche nach meinem perfekten Workflow für die 
 
 Da ich nun vermehrt (link: http://getkirby.com text:Kirby popup:yes) als mein CMS Nr. 1 einsetze, werden Stimmen für ein Git-Deployment-Workflow laut.
 
-Da einer meiner Hosting Provider ((link:http://cyon.ch popup:yes)) Git auf ihren Shared Hostings anbietet, habe ich mich für die folgende Konfiguration entschieden.
+Da einer meiner Hosting Provider [cyon][ln-cyon] Git auf ihren Shared Hostings anbietet, habe ich mich für die folgende Konfiguration entschieden.
 
 #Server
 
@@ -82,3 +82,4 @@ Mir gefällt dieser Ansatz, denn es ist nur noch in wenigen Fällen ein SSH Logi
 - [Git Website][git-website]
 
 [git-website]: http://git-scm.com
+[ln-cyon]: http://cyon.ch

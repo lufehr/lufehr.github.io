@@ -2,20 +2,33 @@
 layout: default
 ---
 <article>
-	<div class="published">{{ page.date | date_to_string }}</div>
-	<h1 class="title">{{ page.title }}</h1>
+	<div class="published">{{ page.date | date: "%B %-d, %Y" }}</div>
+	<h1 class="posttitle">{{ page.title }}</h1>
 	{{ content }}
 </article>
 
 <div class="row author">
 	<h1>the author</h1>
-		<div class="col-lg-2 text-center">
+		<div class="col-md-2 text-center">
 			<img src="/img/lu.png" width="150px" class="img-rounded">
 		</div>
-		<div class="col-lg-10">
-			Luca Fehr is a developer, student, founder of fireup.ch and blogger from Switzerland. Writes, tweets about .NET/C#, Java, HTML5, JavaScript, PHP, Software Engineering and other stuff. Lives, works in the countryside and plays ice hockey.
-			<br><br>
-			Follow @lufehr on Twitter
+		<div class="col-md-10">
+			<p>
+				Luca Fehr is a developer, student, founder of <a href="http://fireup.ch" target="_blank">fireup.ch</a> and <a href="http://lufehr.ch" target="_blank">blogger</a> from Switzerland. <a href="http://lufehr.ch" target="_blank">Writes</a>, <a href="http://twitter.com/lufehr" target="_blank">tweets</a> about .NET/C#, Java, HTML5, JavaScript, PHP, Software Engineering and other stuff. Lives, works in the countryside and plays ice hockey.
+				<br><br>
+				Follow <a href="http://twitter.com/lufehr" target="_blank">@lufehr</a> on Twitter
+			</p>
 		</div>
 </div>
 
+{{% if page.comments %}}
+<div class="row comments">
+	<h1>comments</h1>
+	<div class="col-md-12">
+		
+		<div id="disqus_thread"></div>
+		<noscript>Please enable JavaScript to view the comments.</noscript>
+    
+	</div>
+</div>
+{{%endif%}}
