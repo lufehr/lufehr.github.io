@@ -1,3 +1,4 @@
 name: lufehr.ch
 markdown: redcarpet
 pygments: true
+permalink: /articles/:year/:month/:day/:title
