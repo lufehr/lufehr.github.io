@@ -73,6 +73,8 @@ mark {
   background: #ff0;
   color: #000;
 }
+
+/*
 code,
 kbd,
 pre,
@@ -83,6 +85,7 @@ samp {
 pre {
   white-space: pre-wrap;
 }
+*/
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -602,6 +605,7 @@ address {
   font-style: normal;
   line-height: 1.428571429;
 }
+/*
 code,
 pre {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
@@ -642,6 +646,7 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
+*/
 .container {
   margin-right: auto;
   margin-left: auto;

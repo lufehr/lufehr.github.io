@@ -1,9 +1,21 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<article>
+	<div class="published">{{ page.date | date_to_string }}</div>
+	<h1 class="title">{{ page.title }}</h1>
+	{{ content }}
+</article>
 
-<div class="post">
-{{ content }}
+<div class="row author">
+	<h1>the author</h1>
+		<div class="col-lg-2 text-center">
+			<img src="/img/lu.png" width="150px" class="img-rounded">
+		</div>
+		<div class="col-lg-10">
+			Luca Fehr is a developer, student, founder of fireup.ch and blogger from Switzerland. Writes, tweets about .NET/C#, Java, HTML5, JavaScript, PHP, Software Engineering and other stuff. Lives, works in the countryside and plays ice hockey.
+			<br><br>
+			Follow @lufehr on Twitter
+		</div>
 </div>
+
