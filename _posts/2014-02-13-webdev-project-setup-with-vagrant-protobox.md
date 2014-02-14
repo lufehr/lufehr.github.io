@@ -359,7 +359,7 @@ Je nach Konfiguration des Apache VHOSTS muss nun lediglich noch ein Host-Eintrag
 192.168.5.10	app.dev	www.app.dev
 {% endhighlight %}
 
-damit der Zugriff über `http://app.dev` resp. `www.app.dev` erfolgen kann.
+damit der Zugriff über `http://app.dev` resp. `http://www.app.dev` erfolgen kann.
 
 #Fazit
 
