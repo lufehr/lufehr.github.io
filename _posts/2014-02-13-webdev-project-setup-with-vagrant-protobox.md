@@ -3,7 +3,7 @@ layout: post
 title:  Webdev project setup with Vagrant and Protobox 
 date:   2014-02-13 23:30:00
 tags:	WebDev, Development, Vagrant, Protobox
-assets:
+assets: 2014-02-13-webdev-project-setup-with-vagrant-protobox
 header: 3
 comments: true
 ---
@@ -39,7 +39,11 @@ anschliessend kann mit `vagrant up` die VirtualBox gestartet werden und das Dash
 
 ###Konfiguration
 
-Nun möchte man ja aber eine auf das Projekt zugeschnittene Konfiguration erstellen. Mit Protonet ist dies ein Leichtes. Über das elegante [Webinterface](http://getprotobox.com) können die nötigen Anpassungen vorgenommen, und zum Schluss das Konfigurationsfile heruntergeladen werden. Dies wird anschliessend unter `protobox/data/config/common.yml` gespeichert.
+Nun möchte man ja aber eine auf das Projekt zugeschnittene Konfiguration erstellen. Mit Protonet ist dies ein Leichtes. Über das elegante [Webinterface](http://getprotobox.com) können die nötigen Anpassungen vorgenommen, und zum Schluss das Konfigurationsfile heruntergeladen werden. 
+
+![]({{ site.url }}/assets/{{page.assets}}/protobox-ui.png)
+
+Dies wird anschliessend unter `protobox/data/config/common.yml` gespeichert.
 
 {% highlight bash %}
 #
@@ -344,6 +348,8 @@ applications:
 ###Run
 
 Nun kann die Box mittels `vagrant up` gestartet werden. Der erste Start dauert dabei etwas länger, da das ganze Provisioning durchgeführt wird.
+
+![]({{ site.url }}/assets/{{page.assets}}/run.png)
 
 ###Zugriff
 
